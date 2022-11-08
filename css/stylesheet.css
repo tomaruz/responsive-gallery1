@@ -9,9 +9,24 @@ body{
 }
 h1{
     font-size: 3rem;
+
 }
 p{
-    font-size: 1rem;
+    font-size: 4rem;
+}
+.span{
+    color: brown;
+}
+/*.image-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+.image-text{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+
 }
 #header{
     background-color: bisque;
@@ -27,42 +42,61 @@ p{
     padding: 10px;
 }
 #col1{
-    background-color: aqua;
-    flex: 25%;
+    background-color: white;
+    flex: 33%;
 }
 #col2{
     background-color: aquamarine;
-    flex: 5%;
+    flex: 17%;
 }
 #col3{
     background-color: rgb(66, 195, 254);
-    flex: 20%;
+    flex: 33%;
 }
 #col4{
     background-color: rgb(0, 157, 255);
-    flex: 5%;
+    flex: 17%;
 }
 #footer{
     background-color:bisque;
     padding: 10px;
     text-align: center;
 }
+
+.flex-image p:hover{
+    background-color: blue;
+}
+
+.flex-image p:active{
+    background-color: red;
+}
 .flex-image{
     max-width: 100%;
-    object-fit: fit;
     height: auto;
-/*image fits the column width*/
+/*image fits the column width
     width: 100vw !important;
-    height: auto !important;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: auto !important;*/
+    padding-top: 10px;
+    padding-bottom: 0px;
     border-radius: 25px;
+    opacity: 1;
 
 }
+
+
 /*optimasied for tablet*/
 @media (max-width: 900px){
-    .column{
-        min-width: 50%;
+    #col1{
+        min-width: 66%;
+    }
+    #col2{
+        min-width: 34%;
+    }
+    #col3{
+        min-width: 66%;
+    }
+    #col4{
+        min-width: 34%;
     }
 }
 /*optimised for mobile*/
